@@ -1,6 +1,7 @@
 // Make sure to import 'vue' before declaring augmented types
 import Vue from 'vue'
 import VueRouter from 'vue-router';
+import anime from 'animejs';
 
 // Specify a file with the types you want to augment
 
@@ -17,6 +18,7 @@ declare module 'vue/types/vue' {
     $awa: any;
     $ga: any;
     $router: VueRouter;
+    $anime: anime.AnimeInstance;
   }
 }
 

@@ -70,7 +70,10 @@ module.exports = {
   router: {
     middleware: ['i18n', 'default']
   },
-  plugins: ['~/plugins/i18n.js'],
+  plugins: [
+    '~/plugins/i18n.js',
+    '~/plugins/anime.js'
+  ],
   modules: [
     '~/modules/typescript',
     '@nuxtjs/axios'

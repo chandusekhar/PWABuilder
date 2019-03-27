@@ -31,6 +31,7 @@
     "prismjs": "^1.15.0",
     "ttf2woff": "^2.0.1",
     "vue": "^2.5.17",
+    "vue-animejs": "^2.1.1",
     "vue-class-component": "^6.2.0",
     "vue-i18n": "^8.1.0",
     "vue-property-decorator": "^7.2.0",
@@ -39,6 +40,7 @@
     "vuex-class": "^0.3.1"
   },
   "devDependencies": {
+    "@types/animejs": "^2.0.2",
     "@types/chai": "^4.1.0",
     "@types/chai-as-promised": "^7.1.0",
     "@types/mocha": "^5.2.5",

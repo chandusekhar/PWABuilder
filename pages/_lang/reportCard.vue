@@ -1,6 +1,6 @@
 
 <template>
-  <div id="hubContainer">
+  <div id="hubContainer" ref="background">
     <HubHeader :score="overallScore" :showSubHeader="gotURL"></HubHeader>
 
     <main>
@@ -187,6 +187,17 @@ export default class extends Vue {
       this.gotURL = true;
 
       this.getTopSamples();
+
+      let targets = this.$refs.background;
+      this
+        .$anime
+        .timeline()
+        .add({
+          targets,
+          translateX: 400,
+          easing: 'easeOutExpo',
+          duration: 500
+        });
     } catch (err) {
       console.error("url error", err);
 
@@ -402,8 +413,8 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: $color-button-primary-purple-variant;
-    color: white;
+    background: white;
+    color: black;
     width: 88px;
     justify-content: center;
   }
